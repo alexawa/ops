@@ -1,0 +1,31 @@
+@import "variables.scss";
+@import "includes.scss";
+
+@media only screen and (max-width : 660px) {
+
+	@keyframes upDown {
+		0% {
+			bottom: -250px;
+		}
+		100% {
+			bottom: -210px;
+		}
+	}
+
+	.main-container-sm-mid {
+		width: 100%;
+	}
+
+	header {
+		
+		.lead-text {
+			width: 100%;
+			line-height: 31px;
+		}
+
+		&:after {
+			bottom: -210px;
+			width: 350px;
+		}
+	}
+}

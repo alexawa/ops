@@ -1,0 +1,31 @@
+/* line 17, ../sass/includes.scss */
+.table-align {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+@media only screen and (max-width: 660px) {
+  @keyframes upDown {
+    0% {
+      bottom: -250px;
+    }
+    100% {
+      bottom: -210px;
+    }
+  }
+  /* line 15, ../sass/responsive.scss */
+  .main-container-sm-mid {
+    width: 100%;
+  }
+
+  /* line 21, ../sass/responsive.scss */
+  header .lead-text {
+    width: 100%;
+    line-height: 31px;
+  }
+  /* line 26, ../sass/responsive.scss */
+  header:after {
+    bottom: -210px;
+    width: 350px;
+  }
+}

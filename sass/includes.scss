@@ -1,3 +1,6 @@
+
+@import "variables.scss";
+
 @mixin initialTransition($time) {
 	-webkit-transition: $time;
 	-o-transition: $time;
@@ -9,4 +12,9 @@
 	-ms-transform: translateX($translate);
 	-o-transform: translateX($translate);
 	transform: translateX($translate);
+}
+
+.table-align {
+	display: table-cell;
+	vertical-align: middle;
 }

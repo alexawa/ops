@@ -67,27 +67,99 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 9, ../sass/screen.scss */
+/* line 17, ../sass/includes.scss */
+.table-align {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* line 10, ../sass/screen.scss */
 html,
 body {
   font-family: 'Roboto';
+  /*  $iniFontSize = 6px :root = 16px  */
   font-size: 16px;
   box-sizing: border-box;
 }
 
-/* line 16, ../sass/screen.scss */
+/* line 18, ../sass/screen.scss */
 h1 {
   font-size: 54px;
   font-weight: 300;
   margin-bottom: 30px;
 }
 
-/* line 22, ../sass/screen.scss */
+/* line 24, ../sass/screen.scss */
+h2,
+.logo-holder {
+  font-size: 38px;
+  font-weight: 300;
+}
+
+/* line 30, ../sass/screen.scss */
+.logo-holder {
+  position: relative;
+}
+/* line 32, ../sass/screen.scss */
+.logo-holder:after {
+  position: absolute;
+  display: block;
+  content: 'Copyright: 2018';
+  font-size: .3em;
+  float: left;
+}
+
+/* line 41, ../sass/screen.scss */
+h3 {
+  margin: 15px 0 15px 0;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* line 47, ../sass/screen.scss */
 main, #content {
   display: block;
 }
 
-/* line 26, ../sass/screen.scss */
+/* line 51, ../sass/screen.scss */
+pre {
+  font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+/* line 53, ../sass/screen.scss */
+pre code {
+  text-align: left;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+  overflow: hidden !important;
+  line-height: 16px;
+}
+/* line 63, ../sass/screen.scss */
+pre .hljs {
+  background-color: #25292e !important;
+}
+
+/* line 68, ../sass/screen.scss */
+#scrollBar-wrapper {
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  bottom: 0;
+  height: 1px;
+}
+
+/* line 77, ../sass/screen.scss */
+#scrollBar-progress {
+  transition: all 500ms;
+  background-color: #0366d6;
+  width: 0%;
+  height: 1px;
+}
+
+/* line 84, ../sass/screen.scss */
 .main-nav {
   position: relative;
   top: 0;
@@ -95,33 +167,31 @@ main, #content {
   min-height: 65px;
   width: 100%;
   box-shadow: 5px 5px 15px #f3f3f3;
-  background-color: #fff;
+  background-color: #24292e;
 }
 
-/* line 36, ../sass/screen.scss */
+/* line 94, ../sass/screen.scss */
 .main-container-sm-mid {
-  width: 70%;
+  width: 65%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
-/* line 43, ../sass/screen.scss */
+/* line 100, ../sass/screen.scss */
 .main-container-sm-mid .main-links {
   height: 65px;
   display: inline-table;
 }
-/* line 47, ../sass/screen.scss */
+/* line 104, ../sass/screen.scss */
 .main-container-sm-mid .main-links .main-links-item {
-  display: table-cell;
-  vertical-align: middle;
   padding: 25px;
   color: #0366d6;
-  border-right: 1px #e1e4e8 solid;
+  border-right: 1px #404448 solid;
   -webkit-transition: 200ms;
   -o-transition: 200ms;
   transition: 200ms;
 }
-/* line 54, ../sass/screen.scss */
+/* line 109, ../sass/screen.scss */
 .main-container-sm-mid .main-links .main-links-item:hover {
   cursor: pointer;
   background: #fafbfc;
@@ -131,46 +201,53 @@ main, #content {
   -o-transition: 200ms;
   transition: 200ms;
 }
-/* line 62, ../sass/screen.scss */
+/* line 117, ../sass/screen.scss */
 .main-container-sm-mid .main-links:nth-child(2) {
-  border-left: 1px #e1e4e8 solid !important;
+  border-left: 1px #404448 solid !important;
 }
-/* line 67, ../sass/screen.scss */
-.main-container-sm-mid .main-container-txt {
-  height: inherit;
-  display: table-cell;
-  vertical-align: middle;
-}
-/* line 73, ../sass/screen.scss */
+/* line 122, ../sass/screen.scss */
 .main-container-sm-mid .main-container-subhedings {
   line-height: 65px;
-  font-size: .8em;
+  font-size: .85em;
   float: left;
   color: #586069;
 }
 
-/* line 81, ../sass/screen.scss */
-header {
-  position: relative;
-  height: 35em;
-  background-color: #F3F3F3;
-  padding: 100px 0 0 0;
-  text-align: center;
-}
-/* line 88, ../sass/screen.scss */
-header .container-clearfx {
-  height: 100%;
-  width: 70%;
-  margin: 0 auto;
-}
-/* line 94, ../sass/screen.scss */
-header .lead-text {
+/* line 130, ../sass/screen.scss */
+.lead-text {
   font-weight: 100;
   font-size: 26px;
   width: 55%;
   margin: 0 auto;
 }
-/* line 100, ../sass/screen.scss */
+
+/* line 137, ../sass/screen.scss */
+.fix-height {
+  height: 100% !important;
+  overflow: hidden;
+}
+
+/* line 142, ../sass/screen.scss */
+.container-clearfx {
+  height: 100%;
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* line 149, ../sass/screen.scss */
+header {
+  position: relative;
+  height: 35em;
+  background-image: url(https://github.com/images/modules/site/heroes/simple-codelines.svg);
+  background-color: #2b3137;
+  background-position: center 10%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding: 100px 0 0 0;
+  text-align: center;
+}
+/* line 161, ../sass/screen.scss */
 header:after {
   content: '';
   position: absolute;
@@ -186,4 +263,151 @@ header:after {
   background-image: url(https://dev.rodpub.com/images/130/362_main.jpg);
   background-repeat: no-repeat;
   background-size: contain;
+  animation: 2s upDown;
+  animation-delay: 500ms;
+}
+
+@keyframes upDown {
+  0% {
+    bottom: -150px;
+  }
+  100% {
+    bottom: -50px;
+  }
+}
+/* line 187, ../sass/screen.scss */
+article {
+  width: 100%;
+}
+/* line 190, ../sass/screen.scss */
+article .articl-sect-main {
+  width: 65%;
+  min-height: 30em;
+  margin: 110px auto;
+  text-align: center;
+}
+/* line 196, ../sass/screen.scss */
+article .articl-sect-main p {
+  width: 50%;
+  line-height: 34px;
+  font-size: 20px;
+  margin-bottom: 80px;
+  color: #586069;
+}
+/* line 204, ../sass/screen.scss */
+article .articl-sect-main .main-artcl-main {
+  display: flex;
+  justify-content: space-between;
+}
+/* line 208, ../sass/screen.scss */
+article .articl-sect-main .main-artcl-main .main-artcl-list-item {
+  width: 33.33333%;
+  height: 220px;
+  margin: 1px;
+  font-size: 14px;
+}
+/* line 214, ../sass/screen.scss */
+article .articl-sect-main .main-artcl-main .main-artcl-list-item .artcl-list-item-cont {
+  font-size: 14px;
+  width: 75%;
+  margin: 0 auto;
+  color: #586069;
+  line-height: normal;
+}
+/* line 225, ../sass/screen.scss */
+article .sect-library {
+  background-image: url(https://github.com/images/modules/site/heroes/features-hero-code-review.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 45em;
+  margin: 0 auto;
+  padding: 110px 0 110px 0;
+}
+/* line 236, ../sass/screen.scss */
+article #mc_embed_signup {
+  min-height: 35em;
+  background-color: #24292e;
+  text-align: center;
+  line-height: 54px;
+  color: #fff;
+}
+/* line 243, ../sass/screen.scss */
+article #mc_embed_signup #mc_embed_signup_wrapper {
+  width: 50%;
+  margin: 0 auto;
+  padding: 50px;
+}
+/* line 248, ../sass/screen.scss */
+article #mc_embed_signup #mc_embed_signup_wrapper h2 {
+  margin-bottom: 50px;
+}
+/* line 252, ../sass/screen.scss */
+article #mc_embed_signup #mc_embed_signup_wrapper input {
+  padding: 6px 8px;
+  margin: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #24292e;
+  vertical-align: middle;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  border: 1px solid #d1d5da;
+  border-radius: 3px;
+  outline: none;
+  box-shadow: inset 0 1px 2px rgba(27, 31, 35, 0.25);
+}
+/* line 266, ../sass/screen.scss */
+article #mc_embed_signup #mc_embed_signup_wrapper input:focus {
+  border-color: #2188ff;
+  outline: none;
+  box-shadow: inset 0 1px 2px rgba(27, 31, 35, 0.075), 0 0 0 0.2em rgba(3, 102, 214, 0.3);
+}
+/* line 272, ../sass/screen.scss */
+article #mc_embed_signup #mc_embed_signup_wrapper button {
+  font-weight: 500;
+  font-family: Roboto;
+  padding: .75em 1.25em;
+  border-radius: 6px;
+  border: 1px solid rgba(27, 31, 35, 0.2);
+  color: #fff;
+  background-color: #28a745;
+  background-image: linear-gradient(-180deg, #34d058 0%, #28a745 90%);
+}
+/* line 281, ../sass/screen.scss */
+article #mc_embed_signup #mc_embed_signup_wrapper button:active {
+  background-color: #279f43;
+  background-image: none;
+  border-color: rgba(27, 31, 35, 0.5);
+  box-shadow: inset 0 0.15em 0.3em rgba(27, 31, 35, 0.15);
+}
+/* line 289, ../sass/screen.scss */
+article #mc_embed_signup #mc_embed_signup_wrapper p {
+  color: #6a737d;
+  font-size: 12px;
+  margin-top: 50px;
+}
+
+/* line 298, ../sass/screen.scss */
+footer {
+  min-height: 250px;
+  border-top: 1px #e1e4e8 solid;
+}
+/* line 302, ../sass/screen.scss */
+footer .footer-wrapper-main {
+  width: 65%;
+  min-height: inherit;
+  margin: 30px auto;
+}
+/* line 307, ../sass/screen.scss */
+footer .footer-wrapper-main .foot-list-item-holder {
+  float: left;
+  padding: 35px;
+}
+/* line 311, ../sass/screen.scss */
+footer .footer-wrapper-main .foot-list-item-holder .foot-list-item {
+  color: #586069;
+  padding: 5px;
+  font-size: 14px;
 }

@@ -4,9 +4,12 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="initial-scale=1, user-scalable=no" />
 	<title>Document</title>
-	<link rel="stylesheet" href="css/screen.css">
 	<link rel="stylesheet" href="css/includes.css">
+	<link rel="stylesheet" href="css/variables.css">
+	<link rel="stylesheet" href="css/screen.css">
+	<link rel="stylesheet" href="css/responsive.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/monokai-sublime.css">
 	<script defer src="script/fontawesome-all.min.js"></script>
 </head>
 <body>
@@ -14,19 +17,23 @@
 	<main>
 		<div id="content">
 
+			<div id="scrollBar-wrapper">
+				<div id="scrollBar-progress"></div>
+			</div>
+
 			<nav class="main-nav">
 				<div class="main-container-sm-mid">
 					<p class="main-container-subhedings">Wellcome to OpenSourse</p>
 					<ul class="main-links">
-						<li class="main-links-item">About</li>
-						<li class="main-links-item">Contribute</li>
+						<li class="main-links-item table-align">About</li>
+						<li class="main-links-item table-align">Contribute</li>
 					</ul>
 				</div>
 			</nav>
 
 			<header>
 				<div class="container-clearfx">
-					<h1>The Legal Side of Open Source</h1>
+					<h1>The largest open source community in the world</h1>
 					<p class="lead-text">Everything you've ever wondered about the legal side of open source, and a few things you didn't.</p>
 					<!-- <i class="fab fa-creative-commons"></i>
 					<i class="fab fa-osi"></i> -->
@@ -34,14 +41,161 @@
 			</header>
 
 			<article>
-				
+				<section class="articl-sect-main">
+
+					<h1>Get the most out of open source</h1>
+					<p class="lead-text">Open source software is free for you to use and explore. Get involved to perfect your craft and be part of something big.</p>
+
+					<ul class="main-artcl-main">
+						<li class="main-artcl-list-item">
+							<img src="https://assets-cdn.github.com/images/modules/site/icons/opensource-ico-future.svg?sn" alt="">
+
+							<h3>Shape the future of software</h3>
+							<p class="artcl-list-item-cont">Your contributions help make technology better for everyone, developers and non-developers alike.</p>
+
+						</li>
+						<li class="main-artcl-list-item">
+							<img src="https://assets-cdn.github.com/images/modules/site/icons/opensource-ico-best.svg?sn" alt="">
+
+							<h3>Work with the best in the field</h3>
+							<p class="artcl-list-item-cont">Your contributions help make technology better for everyone, developers and non-developers alike.</p>
+
+						</li>
+						<li class="main-artcl-list-item">
+							<img src="https://assets-cdn.github.com/images/modules/site/icons/opensource-ico-grow.svg?sn" alt="">
+
+							<h3>Grow your skills and help others</h3>
+							<p class="artcl-list-item-cont">Your contributions help make technology better for everyone, developers and non-developers alike.</p>
+
+						</li>
+					</ul>
+				</section>
+
+				<section class="articl-sect-main">
+
+					<h1>Get the most out of open source</h1>
+					<p class="lead-text">Open source software is free for you to use and explore. Get involved to perfect your craft and be part of something big.</p>
+
+					<ul class="main-artcl-main">
+						<li class="main-artcl-list-item fix-height">
+
+							<pre>
+								<code class="jquery">
+// hu						
+$(window).scroll(function() {    
+	var scroll = $(window).scrollTop();
+	if (scroll >= 200) {
+		$("header").addClass("toggled");
+	} else if(scroll < 200) {
+		$("header").removeClass("toggled");
+	}
+});
+</code></pre>
+
+						</li>
+						<li class="main-artcl-list-item fix-height">
+
+							<pre>
+								<code class="jquery">
+// hu						
+$(window).scroll(function() {    
+	var scroll = $(window).scrollTop();
+	if (scroll >= 200) {
+		$("header").addClass("toggled");
+	} else if(scroll < 200) {
+		$("header").removeClass("toggled");
+	}
+});
+</code></pre>
+
+						</li>
+						<li class="main-artcl-list-item fix-height">
+
+							<pre>
+								<code class="jquery">
+// hu						
+$(window).scroll(function() {    
+	var scroll = $(window).scrollTop();
+	if (scroll >= 200) {
+		$("header").addClass("toggled");
+	} else if(scroll < 200) {
+		$("header").removeClass("toggled");
+	}
+});
+</code></pre>
+
+						</li>
+					</ul>
+				</section>
+
+				<section class="articl-sect-main sect-library">
+
+					<div class="container-clearfx">
+
+					<h1>Get the most out of open source</h1>
+					<p class="lead-text">Open source software is free for you to use and explore. Get involved to perfect your craft and be part of something big.</p>
+
+				</div>
+
+				</section>
+
+				<div id="mc_embed_signup">
+					<div id="mc_embed_signup_wrapper">
+						<h2>Get started for free — join the millions of developers already using GitHub to share their code, work together, and build amazing things.</h2>
+						<input type="email">
+						<input type="email">
+						<input type="email">
+						<button>Sign Up!</button>
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis vitae nemo quis est, fugiat itaque.</p>
+					</div>
+				</div>
+
 			</article>
+
+			<footer>
+				<div class="footer-wrapper-main">
+
+					<div class="logo-holder foot-list-item-holder">
+						<i class="fab fa-creative-commons"></i>
+						<i class="fab fa-osi"></i>
+					</div>
+
+					<ul class="foot-list-item-holder">
+						<h3>Shape the future of software</h3>
+						<li class="foot-list-item">list-item-1</li>
+						<li class="foot-list-item">list-item-2</li>
+						<li class="foot-list-item">list-item-3</li>
+						<li class="foot-list-item">list-item-4</li>
+						<li class="foot-list-item">list-item-5</li>
+					</ul>
+
+					<ul class="foot-list-item-holder">
+						<h3>Shape the future of software</h3>
+						<li class="foot-list-item">list-item-1</li>
+						<li class="foot-list-item">list-item-2</li>
+						<li class="foot-list-item">list-item-3</li>
+						<li class="foot-list-item">list-item-4</li>
+						<li class="foot-list-item">list-item-5</li>
+					</ul>
+
+					<ul class="foot-list-item-holder">
+						<h3>Shape the future of software</h3>
+						<li class="foot-list-item">list-item-1</li>
+						<li class="foot-list-item">list-item-2</li>
+						<li class="foot-list-item">list-item-3</li>
+						<li class="foot-list-item">list-item-4</li>
+						<li class="foot-list-item">list-item-5</li>
+					</ul>
+				</div>
+			</footer>
 
 		</div>
 	</main>
 
 	
 	<script src="script/jquery-3.2.1.min.js"></script>
+	<script src="script/highlight.pack.js"></script>
 	<script src="script/app.js"></script>
 </body>
 </html>
