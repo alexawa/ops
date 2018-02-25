@@ -27,6 +27,21 @@ h2,
 	font-weight: 300;
 }
 
+h3,
+h4 {
+	margin: 15px 0 15px 0;
+}
+
+h3 {
+	font-size: 15px;
+	font-weight: 500;
+}
+
+h4 {
+	font-size: 22px;
+	font-weight: 400;
+}
+
 .logo-holder {
 	position: relative;
 	&:after {
@@ -36,12 +51,6 @@ h2,
 		font-size: .3em;
 		float: left;
 	}
-}
-
-h3 {
-	margin: 15px 0 15px 0;
-	font-size: 15px;
-	font-weight: 500;
 }
 
 main, #content {
@@ -217,23 +226,22 @@ article {
 				height: fit-content;
 				text-align: left;
 
-				h3 {
-					font-size: 22px;
-					font-weight: 400;
-				}
-
-				p {
+				.sect-lib-item-subheading {
 					font-size: 15px;
 					width: 100%;
-					font-weight: 400;
-					line-height: normal;
+					font-weight: 300;
+					line-height: 1.55;
 					margin-bottom: 0;
 				}
 			}
 
 			.flexed-item {
 				align-self: center;
-				padding-left: 30px;
+				padding-left: 32px;
+				&:nth-child(1) {
+					padding-left: 0;
+					padding-right: 32px;
+				}
 			}
 		}
 		
