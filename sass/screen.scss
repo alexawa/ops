@@ -150,7 +150,8 @@ pre {
 
 .container-clearfx {
 	height: 100%;
-	width: 70%;
+	width: 60%;
+	// Can be changed to 70%
 	margin: 0 auto;
 
 }	
@@ -335,6 +336,86 @@ article {
 			font-size: 12px;
 			margin-top: 50px;
 		}
+	}
+}
+
+.gutter-md-holder {
+	padding: 50px;
+
+	.gutter-element-holder {
+		width: inherit;
+		height: inherit;
+		float: left;
+		position: relative;
+
+		.g-el-text-prev-content,
+		.g-el-text-content {
+			display: block;
+			width: 100%;
+			color: #fff;
+			font-weight: 200;
+			font-size: 12px;
+		}
+
+		.g-el-text-prev-content {
+			margin-top: 50%;
+			transform: translateY(-50%);
+			font-size: 36px;
+		}
+
+		.g-el-text-content {
+			width: 80%;
+		}
+
+		.g-el {
+			position: absolute;
+			border-radius: 50%;
+		}
+	}
+
+	.gutter-flex {
+		display: unset !important;
+	}
+
+	.gutter-item-info-card {
+		max-width: 400px !important;
+		margin-left: auto !important;
+		margin-bottom: 15px !important;
+		height: unset !important;
+		text-align: left;
+		padding: 10px;
+		border: 1px solid transparent;
+		@include initialTransition(200ms);
+		&:hover {
+			@include initialTransition(200ms);
+			cursor: pointer;
+			border: 1px solid rgba(27,31,35,0.2);
+			box-shadow: 0 10px 50px rgba(27,31,35,0.07) !important;
+		}
+	}
+
+	.gutter-main {
+		top: 0;
+		left: 0;
+		background-color: #fb8532;
+		height: 195px;
+		width: 195px;
+	}
+
+	.gutter-developer {
+		top: 25%;
+		left: 55%;
+		background-color: #0366d6;
+		height: 155px;
+		width: 155px;
+	}
+
+	.gutter-business {
+		top: 40%;
+		left: 20%;
+		background-color: #6f42c1;
+		height: 115px;
+		width: 115px;
 	}
 }
 }

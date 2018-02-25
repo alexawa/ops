@@ -2,9 +2,9 @@
 @import "variables.scss";
 
 @mixin initialTransition($time) {
-	-webkit-transition: $time;
-	-o-transition: $time;
-	transition: $time;
+	-webkit-transition: all $time;
+	-o-transition: all $time;
+	transition: all $time;
 }
 
 @mixin initianTranslateX($translate) {

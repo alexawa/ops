@@ -86,24 +86,28 @@
   .articl-sect-main {
     height: 100% !important;
   }
+  /* line 77, ../sass/responsive.scss */
+  .articl-sect-main .container-clearfx {
+    width: 90% !important;
+  }
 
-  /* line 79, ../sass/responsive.scss */
+  /* line 82, ../sass/responsive.scss */
   #mc_embed_signup_wrapper {
     width: unset !important;
   }
-  /* line 82, ../sass/responsive.scss */
+  /* line 85, ../sass/responsive.scss */
   #mc_embed_signup_wrapper h1,
   #mc_embed_signup_wrapper h2,
   #mc_embed_signup_wrapper h3,
   #mc_embed_signup_wrapper h4 {
     width: 100% !important;
   }
-  /* line 89, ../sass/responsive.scss */
+  /* line 92, ../sass/responsive.scss */
   #mc_embed_signup_wrapper input {
     padding: 6px 0 6px 0 !important;
     margin: 0 !important;
   }
-  /* line 94, ../sass/responsive.scss */
+  /* line 97, ../sass/responsive.scss */
   #mc_embed_signup_wrapper p {
     line-height: 1.5 !important;
   }
