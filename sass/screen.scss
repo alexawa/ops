@@ -192,6 +192,7 @@ article {
 		min-height: 30em;
 		margin: 110px auto;
 		text-align: center;
+		border-bottom: 1px #e1e4e8 solid;
 
 		p {
 			width: 50%;
@@ -199,6 +200,41 @@ article {
 			font-size: 20px;
 			margin-bottom: 80px;
 			color: #586069;
+		}
+
+		.sect-lib-content {
+			width: 70%;
+			margin: 50px auto;
+			display: flex;
+			flex-direction: row;
+
+			img {
+				width: 100%;
+			}
+
+			.sect-lib-content-item {
+				width: 50%;
+				height: fit-content;
+				text-align: left;
+
+				h3 {
+					font-size: 22px;
+					font-weight: 400;
+				}
+
+				p {
+					font-size: 15px;
+					width: 100%;
+					font-weight: 400;
+					line-height: normal;
+					margin-bottom: 0;
+				}
+			}
+
+			.flexed-item {
+				align-self: center;
+				padding-left: 30px;
+			}
 		}
 		
 		.main-artcl-main {
@@ -310,7 +346,7 @@ footer {
 
 			.foot-list-item {
 				color: #586069;
-				padding: 5px;
+				line-height: 2.25;
 				font-size: 14px;
 			}
 		}

@@ -17,6 +17,7 @@
 	}
 
 	header {
+		height: 25em !important;
 		
 		.lead-text {
 			width: 100%;
@@ -28,4 +29,34 @@
 			width: 350px;
 		}
 	}
+
+	section {
+		width: 100% !important;
+		margin: 30px auto !important;
+	}
+
+	h1,
+	h2,
+	h3,
+	.lead-text {
+		width: 90% !important;
+		font-size: 100% !important;
+	}
+
+	.main-artcl-main {
+		margin-bottom: 80px;
+
+		.main-artcl-list-item {
+			height: 100% !important;
+		}
+	}
+
+.sect-library * {
+	width: 100% !important;
+	float: left !important;
+}
+
+.articl-sect-main {
+	height: 100% !important;
+}
 }
