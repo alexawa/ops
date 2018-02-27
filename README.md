@@ -68,13 +68,15 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/alexawa/ops/tags). 
+All versionings and update list will be provided here. All updates are commented briefly by a developer:
+* Initial project version:
+* Fixed and adding gutter elements section: 
 
 ## Authors
 
 * **Aleksandrs Bogačkins** - *Initial work* - [Watch me via GitHub](https://github.com/alexawa)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+Yet there are no [contributors](https://github.com/your/project/contributors) who participated in this project.
 
 ## License
 
