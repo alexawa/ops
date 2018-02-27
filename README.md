@@ -1,6 +1,6 @@
 # Godland OpenSourse
 
-Hello, developer! We are glad to offer you the template of our OpenSourse page!
+Hello, developer! We are pleased to offer you the template of our OpenSourse page!
 
 ## Getting Started
 
@@ -8,29 +8,25 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
+Due to the fact that this template is completely free, we wish you coming across with challenge of its downloading. Go to the Installing section for more details but before – please visit [this page](https://git-scm.com/downloads) to download Git, that will be soon required.
 
 ### Installing
 
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
+Ugh, you have done a great job so far by reaching the Installing section. So as you have downloaded Git – lets access your Desktop to *clone* the files. Open up your **Git Bash** and type:
 
 ```
-Give the example
+cd Desktop
 ```
 
-And repeat
+However, your goal is to access the Desktop directory (this is how I do it on my computer) and whether it didnt work – try to find your one or contact us!
+
+Now lets clone these files to your *local repository*. Local repository is a storage on your local machine – e.g computer. Type this code to *clone* the files from *Remote repository* e.g GitHub.
 
 ```
-until finished
+$git clone https://github.com/alexawa/guide.git godlandDev
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+By saying *clone*, you ask **Git** to clone all the files of a link that comes further, 'download' them to a directory of Desktop, that we accessed above and pass them to a folder called *godlandDev*. Now, you gained all our OpenSource files, congratilations!
 
 ## Running the tests
 
@@ -77,13 +73,16 @@ All versionings and update list will be provided here. All updates are commented
 * **Aleksandrs Bogačkins** - *Initial work* - [Watch me via GitHub](https://github.com/alexawa)
 
 Yet there are no [contributors](https://github.com/your/project/contributors) who participated in this project.
+Any questions so far? Please contact me via *alexa.wa@icloud.com*!
 
 ## License
 
 This project is licensed under the Apache License 2.0 - see the [LICENSE.md](LICENSE.md) file for details
 
-## Acknowledgments
+## Crossbrowsing
 
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
+* Google Chrome: soon..
+* Safari: soon..
+* Opera: soon..
+* Mozilla: soon..
+* IE: soon..
