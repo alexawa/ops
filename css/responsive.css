@@ -1,4 +1,4 @@
-/* line 17, ../sass/includes.scss */
+/* line 40, ../sass/includes.scss */
 .table-align {
   display: table-cell;
   vertical-align: middle;
@@ -17,40 +17,45 @@
   .main-container-sm-mid {
     width: 100%;
   }
+  /* line 17, ../sass/responsive.scss */
+  .main-container-sm-mid p {
+    margin: 0 auto;
+    font-size: .7em !important;
+  }
 
-  /* line 19, ../sass/responsive.scss */
+  /* line 23, ../sass/responsive.scss */
   header {
     height: 25em !important;
   }
-  /* line 22, ../sass/responsive.scss */
+  /* line 26, ../sass/responsive.scss */
   header .lead-text {
     width: 100%;
     line-height: 31px;
   }
-  /* line 27, ../sass/responsive.scss */
+  /* line 31, ../sass/responsive.scss */
   header:after {
     bottom: -210px;
     width: 350px;
   }
 
-  /* line 33, ../sass/responsive.scss */
+  /* line 37, ../sass/responsive.scss */
   section {
     width: 100% !important;
     margin: 30px auto !important;
   }
 
-  /* line 38, ../sass/responsive.scss */
+  /* line 42, ../sass/responsive.scss */
   .sect-lib-content {
     width: unset !important;
     display: unset !important;
   }
-  /* line 41, ../sass/responsive.scss */
+  /* line 45, ../sass/responsive.scss */
   .sect-lib-content .sect-lib-content-item {
     padding: 0 !important;
     width: 100% !important;
   }
 
-  /* line 47, ../sass/responsive.scss */
+  /* line 51, ../sass/responsive.scss */
   h1,
   h2,
   h3,
@@ -61,53 +66,85 @@
     line-height: 1.5;
   }
 
-  /* line 57, ../sass/responsive.scss */
+  /* line 61, ../sass/responsive.scss */
+  .timetable-wrapper {
+    display: unset;
+  }
+  /* line 62, ../sass/responsive.scss */
+  .timetable-wrapper table {
+    -webkit-display: contents;
+    -moz-display: contents;
+    -ms-display: contents;
+    -o-display: contents;
+    display: contents;
+  }
+  /* line 69, ../sass/responsive.scss */
+  .timetable-wrapper table td:last-child {
+    border-right: none !important;
+    border-left: none !important;
+  }
+  /* line 73, ../sass/responsive.scss */
+  .timetable-wrapper table td:nth-child(4n) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    margin-bottom: 15px;
+  }
+  /* line 80, ../sass/responsive.scss */
+  .timetable-wrapper tr {
+    display: grid;
+  }
+  /* line 83, ../sass/responsive.scss */
+  .timetable-wrapper td {
+    display: block;
+    float: left;
+  }
+
+  /* line 89, ../sass/responsive.scss */
   .main-artcl-main {
     margin-bottom: 80px;
   }
-  /* line 60, ../sass/responsive.scss */
+  /* line 92, ../sass/responsive.scss */
   .main-artcl-main .main-artcl-list-item {
     height: 100% !important;
   }
 
-  /* line 65, ../sass/responsive.scss */
+  /* line 97, ../sass/responsive.scss */
   .main-artcl-main {
     display: unset !important;
     justify-content: normal !important;
   }
-  /* line 68, ../sass/responsive.scss */
+  /* line 100, ../sass/responsive.scss */
   .main-artcl-main .main-artcl-list-item {
     margin: 0 !important;
     width: 100% !important;
     margin-bottom: 80px !important;
   }
 
-  /* line 75, ../sass/responsive.scss */
+  /* line 107, ../sass/responsive.scss */
   .articl-sect-main {
     height: 100% !important;
   }
-  /* line 77, ../sass/responsive.scss */
+  /* line 109, ../sass/responsive.scss */
   .articl-sect-main .container-clearfx {
     width: 90% !important;
   }
 
-  /* line 82, ../sass/responsive.scss */
+  /* line 114, ../sass/responsive.scss */
   #mc_embed_signup_wrapper {
     width: unset !important;
   }
-  /* line 85, ../sass/responsive.scss */
+  /* line 117, ../sass/responsive.scss */
   #mc_embed_signup_wrapper h1,
   #mc_embed_signup_wrapper h2,
   #mc_embed_signup_wrapper h3,
   #mc_embed_signup_wrapper h4 {
     width: 100% !important;
   }
-  /* line 92, ../sass/responsive.scss */
+  /* line 124, ../sass/responsive.scss */
   #mc_embed_signup_wrapper input {
     padding: 6px 0 6px 0 !important;
     margin: 0 !important;
   }
-  /* line 97, ../sass/responsive.scss */
+  /* line 129, ../sass/responsive.scss */
   #mc_embed_signup_wrapper p {
     line-height: 1.5 !important;
   }

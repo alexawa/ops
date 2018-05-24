@@ -14,6 +14,29 @@
 	transform: translateX($translate);
 }
 
+@mixin initialDisplay($display, $align, $justify, $direction) {
+	-webkit-display: $display;
+	-moz-display: $display;
+	-ms-display: $display;
+	-o-display: $display;
+	display: $display;
+
+	-ms-align-items: $align;
+	align-items: $align;
+
+	-webkit-justify-content: $justify;
+	-moz-justify-content: $justify;
+	-ms-justify-content: $justify;
+	-o-justify-content: $justify;
+	justify-content: $justify;
+
+	-webkit-flex-direction: $direction;
+	-moz-flex-direction: $direction;
+	-ms-flex-direction: $direction;
+	-o-flex-direction: $direction;
+	flex-direction: $direction;
+}
+
 .table-align {
 	display: table-cell;
 	vertical-align: middle;

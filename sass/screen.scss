@@ -9,10 +9,13 @@
 
 html,
 body {
+	margin: 0;
+	padding: 0;
 	font-family: 'Roboto';
 	/*  $iniFontSize = 6px :root = 16px  */
 	font-size: ($iniFontSize * 3) - 2 + px;
 	box-sizing: border-box;
+	//overflow-x: hidden;
 }
 
 h1 {
@@ -33,13 +36,19 @@ h4 {
 }
 
 h3 {
-	font-size: 15px;
 	font-weight: 500;
 }
 
 h4 {
 	font-size: 22px;
 	font-weight: 400;
+}
+
+h3,
+.artcl-list-item-cont,
+.sect-lib-item-subheading,
+.main-artcl-main {
+	font-size: 14px !important;
 }
 
 .logo-holder {
@@ -50,6 +59,23 @@ h4 {
 		content: 'Copyright: 2018';
 		font-size: .3em;
 		float: left;
+	}
+}
+
+.timetable-wrapper {
+	@include initialDisplay(flex, unset, center, unset);
+	margin-bottom: 80px;
+	.timetable {
+		td {
+			padding: 15px;
+			margin: 1px;
+			font-weight: 300;
+			text-align: center;
+			border-left: 1px solid rgba(0,0,0,.25);
+			&:last-child {
+				border-right: 1px solid rgba(0,0,0,.25);
+			}
+		}
 	}
 }
 
@@ -228,7 +254,6 @@ article {
 				text-align: left;
 
 				.sect-lib-item-subheading {
-					font-size: 15px;
 					width: 100%;
 					font-weight: 300;
 					line-height: 1.55;
@@ -254,10 +279,8 @@ article {
 				width: 33.33333%;
 				height: 220px;
 				margin: 1px;
-				font-size: 14px;
 
 				.artcl-list-item-cont {
-					font-size: 14px;
 					width: 75%;
 					margin: 0 auto;
 					color: #586069;
@@ -338,86 +361,6 @@ article {
 		}
 	}
 }
-
-.gutter-md-holder {
-	padding: 50px;
-
-	.gutter-element-holder {
-		width: inherit;
-		height: inherit;
-		float: left;
-		position: relative;
-
-		.g-el-text-prev-content,
-		.g-el-text-content {
-			display: block;
-			width: 100%;
-			color: #fff;
-			font-weight: 200;
-			font-size: 12px;
-		}
-
-		.g-el-text-prev-content {
-			margin-top: 50%;
-			transform: translateY(-50%);
-			font-size: 36px;
-		}
-
-		.g-el-text-content {
-			width: 80%;
-		}
-
-		.g-el {
-			position: absolute;
-			border-radius: 50%;
-		}
-	}
-
-	.gutter-flex {
-		display: unset !important;
-	}
-
-	.gutter-item-info-card {
-		max-width: 400px !important;
-		margin-left: auto !important;
-		margin-bottom: 15px !important;
-		height: unset !important;
-		text-align: left;
-		padding: 10px;
-		border: 1px solid transparent;
-		@include initialTransition(200ms);
-		&:hover {
-			@include initialTransition(200ms);
-			cursor: pointer;
-			border: 1px solid rgba(27,31,35,0.2);
-			box-shadow: 0 10px 50px rgba(27,31,35,0.07) !important;
-		}
-	}
-
-	.gutter-main {
-		top: 0;
-		left: 0;
-		background-color: #fb8532;
-		height: 195px;
-		width: 195px;
-	}
-
-	.gutter-developer {
-		top: 25%;
-		left: 55%;
-		background-color: #0366d6;
-		height: 155px;
-		width: 155px;
-	}
-
-	.gutter-business {
-		top: 40%;
-		left: 20%;
-		background-color: #6f42c1;
-		height: 115px;
-		width: 115px;
-	}
-}
 }
 
 footer {
@@ -437,6 +380,9 @@ footer {
 				color: #586069;
 				line-height: 2.25;
 				font-size: 14px;
+				&:hover {
+					cursor: pointer;
+				}
 			}
 		}
 	}

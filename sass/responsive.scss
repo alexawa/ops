@@ -14,6 +14,10 @@
 
 	.main-container-sm-mid {
 		width: 100%;
+		p {
+			margin: 0 auto;
+			font-size: .7em !important;
+		}
 	}
 
 	header {
@@ -52,6 +56,34 @@
 		margin: 30px auto;
 		font-size: 100% !important;
 		line-height: 1.5;
+	}
+
+	.timetable-wrapper {
+		table {
+			-webkit-display: contents;
+			-moz-display: contents;
+			-ms-display: contents;
+			-o-display: contents;
+			display: contents;
+			td {
+				&:last-child {
+					border-right: none !important;
+					border-left: none !important;
+				}
+				&:nth-child(4n) {
+					border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+					margin-bottom: 15px;
+				}
+			}
+		}
+		display: unset;
+		tr {
+			display: grid;
+		}
+		td {
+			display: block;
+			float: left;
+		}
 	}
 
 	.main-artcl-main {
